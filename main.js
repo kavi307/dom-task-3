@@ -27,9 +27,12 @@ function minus(){
 */
 let btn=document.getElementById("decrese");
 btn.addEventListener("click",function(){
+
   var text1=parseInt(document.getElementById("num").value);
+  if(text1>0){
   text1--;
   document.getElementById("num").value=text1;
+  }
   
  })
 
